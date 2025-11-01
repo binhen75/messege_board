@@ -1,0 +1,11 @@
+<h1> Homepage </h1>
+<ul>
+    {% for post in post_list %} 
+    {% comment %}
+        By default, ListView returns a context variable called <model>_list
+    {% endcomment %}
+    <li>
+        {{ post.text }}
+    </li>
+    {% endfor %}
+</ul>
